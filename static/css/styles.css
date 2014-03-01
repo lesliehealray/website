@@ -1,0 +1,75 @@
+
+body {
+    display: block;
+    background-color:#F0F0F0;
+    min-width: 960px;
+    max-width:1000px;
+    width: 100%;
+    margin: 1em auto;
+    text-align: center;
+    font-family: "Coming Soon";
+    font-size: 16px;
+    color:#003366;
+    line-height: 1em;
+}
+
+ #wrapper {
+    text-align: center;
+    font-family: "Homemade Apple";
+    font-size: 45px;
+    color:#003366;
+    margin: 75px;
+    padding: 50px;
+    background-color:#FFFFFF;
+    border-radius: 15px;
+}
+nav{
+    font-family: "Homemade Apple";
+}
+
+a {
+    text-decoration: none;
+    font-size: 20px;
+    margin: 0.8em;
+    -webkit-transition: all 0.3s;
+    -moz-transition: all 0.3s;
+    transition: all 0.3s;
+}
+
+a:hover {
+    font-size: 25px;
+}
+
+
+h3 {
+    font-family: 'Coming Soon';
+    font-size: 18px;
+    color:#003366;
+    text-align: center;
+    line-height: 1em;
+}
+
+p {
+    font-family: "Coming Soon";
+    font-size: 16px;
+    line-height: 1em;
+    text-align: left;
+}
+
+#photo img {
+    border-radius: 50%;
+    box-shadow: 0px 0px 5px #000;
+    display: block;
+    margin: 5em auto;
+}
+
+.sound{
+    display:block;
+    line-height: 2em;
+}
+footer {
+    display: block;
+    font-family: 'Homemade Apple',cursive;
+    color: #003366;
+    text-align: center;
+}
