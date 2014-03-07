@@ -5,15 +5,15 @@
     <div class="main">
 
         <!-- Posts  -->
-        <ul>
-            {% for post in posts.object_list %}
-                <h3>{{ post.title }}</h3>
-                <ul>
-                <h3>{{ post.created }}</h3>
-                    <p>{{ post.body|linebreaks }}</p>
-                </ul>
-            {% endfor %}
-        </ul>
+
+        {% for post in posts.object_list %}
+            <h3>{{ post.title }}</h3>
+            <p>{{ post.created }}</p>
+            <div id="pg_content">
+                <p>{{ post.body|linebreaks }}</p>
+            </div>
+        {% endfor %}
+
 
         <!-- Next/Prev page links  -->
         {% if posts.object_list and posts.paginator.num_pages > 1 %}

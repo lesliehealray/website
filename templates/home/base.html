@@ -6,27 +6,28 @@
     <head>
         <title>Leslie Heal Ray </title>
         <meta Charset="utf-8"/>
-        <link href="//fonts.googleapis.com/css?family=Coming+Soon:400" rel="stylesheet" type="text/css">
-        <link href='http://fonts.googleapis.com/css?family=Homemade+Apple' rel='stylesheet' type='text/css'>
+        <link href='http://fonts.googleapis.com/css?family=Alegreya+Sans+SC' rel='stylesheet' type='text/css'>
+        <link href='http://fonts.googleapis.com/css?family=Raleway' rel='stylesheet' type='text/css'>
         <link rel="stylesheet" type="text/css" href='{% static "css/styles.css" %}' /><!-- CSS -->
-        <meta name="viewport" content="width-device-width, initial-scale=1.0">
+        {% block extra-js %}{% endblock %}
     </head>
 
     <body>
-        <header id="wrapper">
-            {% block site_title %}Leslie Heal Ray{% endblock %}
-        </header>
-        <nav>
-            <ul>
-                <class='active'><a href="{% url 'home' %}">Home</a>
-                <a href="{% url 'about' %}">About</a>
-                <a href="{% url 'audio' %}">Audio</a>
-                <a href="{% url 'blog' %}">Blog</a>
-                <a href="{% url 'contact' %}">Contact</a>
-            </ul>
-        </nav>
-        {% block content %}{% endblock %}
-
+        <div id="outer">
+            <header id="wrapper">
+                {% block site_title %}Leslie Heal Ray{% endblock %}
+            </header>
+            <nav>
+                <ul>
+                    <li><a href="{% url 'home' %}">Home</a></li>
+                    <li><a href="{% url 'about' %}">About</a></li>
+                    <li><a href="{% url 'audio' %}">Audio</a></li>
+                    <li><a href="{% url 'blog' %}">Blog</a></li>
+                    <li><a href="{% url 'contact' %}">Contact</a></li>
+                </ul>
+            </nav>
+            {% block content %}{% endblock %}
+        </div>
     </body>
 
 </html>

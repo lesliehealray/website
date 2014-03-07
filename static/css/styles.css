@@ -1,75 +1,94 @@
 
 body {
     display: block;
-    background-color:#F0F0F0;
+    background-color:rgb(0,55,104);
     min-width: 960px;
     max-width:1000px;
     width: 100%;
     margin: 1em auto;
-    text-align: center;
-    font-family: "Coming Soon";
-    font-size: 16px;
-    color:#003366;
-    line-height: 1em;
+    font-family: 'Raleway', sans-serif;
+    font-size: 18px;
+    color:#000033;
+}
+
+#outer {
+    background:linear-gradient(0deg, grey, white);
+    padding:50px;
+    margin-left:10px;
+    margin-right: 10px;
+    min-height: 700px;
+    border-radius: 5%;
 }
 
  #wrapper {
     text-align: center;
-    font-family: "Homemade Apple";
+    font-family: 'Raleway', sans-serif;
     font-size: 45px;
-    color:#003366;
-    margin: 75px;
-    padding: 50px;
-    background-color:#FFFFFF;
-    border-radius: 15px;
+    color:#000033;
+    margin-left: 50px;
+    margin-right:50px;
+    margin-top: 25px;
+    margin-bottom: 0px;
+    border-radius: 15px 15px 0px 0px;
 }
+
 nav{
-    font-family: "Homemade Apple";
+    text-align: center;
 }
+
+nav ul li{
+    display: inline;
+    line-height: 25px;
+    margin: 0 .8em;
+}
+
 
 a {
     text-decoration: none;
-    font-size: 20px;
-    margin: 0.8em;
-    -webkit-transition: all 0.3s;
-    -moz-transition: all 0.3s;
-    transition: all 0.3s;
+    font-size: 18px;
 }
 
 a:hover {
-    font-size: 25px;
+    color: grey;
 }
 
 
 h3 {
-    font-family: 'Coming Soon';
-    font-size: 18px;
-    color:#003366;
-    text-align: center;
-    line-height: 1em;
+    font-family: 'Raleway', sans-serif;
+    font-size: 20px;
+    font-weight: normal;
 }
 
+
+
 p {
-    font-family: "Coming Soon";
     font-size: 16px;
-    line-height: 1em;
+    line-height: 1.5em;
     text-align: left;
 }
 
 #photo img {
+    height: 200px;
+    width: 200px;
     border-radius: 50%;
     box-shadow: 0px 0px 5px #000;
     display: block;
     margin: 5em auto;
 }
 
-.sound{
+.pg_content{
     display:block;
-    line-height: 2em;
+    line-height: 1em;
+    font-size: 16px;
 }
+
+
 footer {
     display: block;
-    font-family: 'Homemade Apple',cursive;
-    color: #003366;
+    font-family: 'Raleway', sans-serif;
     text-align: center;
+}
+
+#message {
+    vertical-align: top;
 }
